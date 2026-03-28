@@ -1742,10 +1742,25 @@ ul { list-style: none; }
    ═══════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
     .hero {
+        display: flex;
         flex-direction: column;
         text-align: center;
+        padding-top: 140px;
     }
-    .hero-content { max-width: 100%; }
+    .hero-content { 
+        max-width: 100%; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .hero-name {
+        align-items: center;
+    }
+    .hero-tagline {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
     .hero-visual {
         width: 260px;
         height: 340px;
@@ -1757,6 +1772,13 @@ ul { list-style: none; }
     .about-split {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+    .about-right {
+        text-align: center;
+    }
+    .about-gauges {
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .about-avatar-wrapper {
         max-width: 280px;
